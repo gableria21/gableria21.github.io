@@ -1,0 +1,1452 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	
+<title> Cuevas Bakeshop - Testimonials </title>	
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');	
+		
+*,
+*::before,
+::after{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+	
+	
+	
+html{
+	height: 100%; 
+	background-color: #F0E0C4;
+	font-family: 'Cabin', sans-serif;
+	font-size: 10px;	
+	scroll-behavior: smooth;	
+}	
+	
+body{
+	overflow-x: hidden;
+	background: url("wallpaper2.jpg");
+}	
+	
+section{
+	padding: 3.9rem 0;			
+}	
+	
+img{
+	width: 100%;
+	max-width: 100%;	
+}
+	
+a{
+	text-decoration: none;	
+}
+	
+p{
+	font-size: 1.6rem;
+}	
+	
+.container{
+	width:100%;
+	max-width: 122.5rem;
+	margin: 0 auto;
+	padding:0 2.4rem;
+}		
+	
+/* header */	
+	
+header{
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);	
+}
+	
+.nav{
+	height: 7.2rem;
+	padding-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;		
+}	
+
+.menu-toggle{
+	color: #EEA210;
+	font-size: 2.2rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 2.5rem;
+	cursor: pointer;
+	z-index: 1500;		
+}	
+	
+.fa-times{
+	display: none;		
+}	
+	
+.nav-list{
+	list-style: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 100vh;
+	background-color: #33140A;
+	padding: 4.4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	z-index: 1250;
+	transform: translateX(-100%);
+	transition: transform .5s;
+	margin:0;
+	text-transform: uppercase;
+}	
+
+	
+.nav::before{
+	content: '';
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,.8);
+	z-index: 1000;
+	opacity:0;
+	transform: scale(0);
+	transition: opacity .5s;	
+}	
+	
+.open .fa-times{
+	display: block;
+
+}	
+	
+.open .fa-bars{
+	display: none;	
+}	
+	
+.open .nav-list{
+	transform: translateX(0);
+}	
+	
+.open .nav::before{
+	opacity: 1;
+	transform: scale(1);	
+}	
+
+	
+.nav-list .nav-item{
+	list-style:none;
+	text-align:center;
+	display: block;		
+}	
+	
+.nav-list .nav-item:last-child{
+	border-right: none;	
+}	
+	
+
+.nav-list .nav-item a{
+	text-decoration: none;
+	padding: 10px;
+	display: block;	
+}		
+	
+	
+.nav-item{
+	border-bottom: 2px solid rgba(255,255,255, .3);				
+}	
+	
+
+.nav-item .icon{
+	width:40px;
+	height: 40px;
+	text-align:center;
+	overflow: hidden;
+	margin:0 auto 10px;	
+		
+}	
+	
+.nav-item .icon .fa{
+	width:100%;
+	height: 100%;
+	line-height: 40px;
+	font-size:30px;
+	transition:0.5s;
+	color: #FFFFFF;
+}
+	
+.nav-item .icon .fa:last-child{
+	color: #EEA210;
+}		
+	
+.nav-item:hover .icon .fa{
+	transform: translateY(-100%);
+}	
+	
+.nav-link{
+	display: block;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	letter-spacing: 2px;
+	margin-right: -2px;
+	transition: color.5s;	
+	position: relative;
+	height:20px;
+	width:100%;
+	display: block;	
+	overflow: hidden;
+}	
+	
+.nav-link:hover{
+	color: #EEA210;		
+}	
+	
+	
+ul li a .nav-link span{
+	display:block;
+	position: relative;
+	color:#FFFFFF;
+	font-size:18px;
+	line-height: 20px;
+	transition: 0.5s;
+}	
+	
+ul li a .nav-link span:before{
+	content: attr(data-text);
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #EEA210;
+}	
+	
+ul li a:hover .nav-link span{
+	transform: translateY(20px);
+}	
+
+	
+	
+/* hero */
+.hero{
+	width: 100%;
+	height: 100vh;
+	background: url("background8.png") center no-repeat;
+	background-size: cover;
+	display:flex;
+	align-items: center;
+	text-align: center;	
+
+}	
+
+		
+
+.sub-headline{
+	font-size: 8.5rem;
+	font-family: 'Alex Brush', cursive;
+	color: #EEA10F;
+	font-weight: 100;
+	line-height: .4;
+	letter-spacing: 2px;
+	opacity: 0;
+	animation: fadeUp .5s forwards;
+	animation-delay: .5s;
+}	
+	
+.first-letter{
+	text-transform: uppercase;
+	font-size: 10.3rem;
+}	
+	
+	
+.headline{
+	color:#FFF;
+	font-size: 2.7rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	font-weight:900;
+	padding-top: 10px;
+	letter-spacing: .5rem;
+	margin-right: -.5rem;
+	animation: scale .5s forwards;
+
+}	
+
+.separator{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}	
+	
+.line{
+	width: 100%;
+	max-width: 12rem;
+	height: .25rem;
+	background-color: #FFFFFF;
+	position: relative;	
+	opacity: 0;
+	animation: grow 2s forwards;
+	animation-delay: .9s;
+}
+	
+.line-right::before,
+.line-left::before{
+	content:'';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);	
+	border: .6rem solid transparent;
+	opacity: 0;
+	animation: grow .5s forwards;
+	animation-delay: 1.2s;
+}	
+
+.line-right::before{
+	border-right-color: #FFFFFF;
+	right: 0;	
+}
+	
+.line-left::before{
+	border-left-color: #FFFFFF;
+	left: 0;	
+}	
+	
+.asterisk{
+	font-size: 1.2rem;
+	color: #41190B;
+	margin: 0 1.6rem;	
+	opacity: 0;
+	animation: spin .5s forwards;
+	animation-delay: .7s;
+}	
+	
+.single-animation{
+	opacity: 0;
+	animation: fadeDown .5s forwards;
+	animation-delay: 1.5s;	
+}	
+	
+	
+.headline-description h5{
+	color: #FFFFFF;
+	font-size: 1.4rem;
+	font-weight: 100;
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+	letter-spacing: 3px;
+	margin-right: -3px;
+}
+	
+/*discover our story*/
+	
+.global-headline{
+	text-align: center;
+	margin-top: 3.9rem;	
+}	
+	
+.discover-our-story .global-headline{
+	margin-top: 6.9rem;	
+}	
+	
+.global-headline .asterisk{
+	color: #000000;	
+	margin: 2.4rem 0;
+}	
+
+.headline-dark{
+	color: #d4af37;
+	letter-spacing: .7rem;
+	margin-right: -.7rem;
+} 
+	
+.global-headline .sub-headline{
+	letter-spacing: -1px;
+	line-height: .42;
+}	
+	
+.bakeshop-info{
+	text-align: center;		
+}		
+	
+.bakeshop-description{
+	margin-bottom: 3rem;	
+}	
+    
+.bakeshop-description p{
+	line-height: 1.6;
+	margin-bottom: 2.4rem;
+}	
+	
+
+	
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("cuevas.jpg");
+  min-height: 500px;
+  opacity:0.9;
+}
+
+.bgimg-2 {
+  background-image: url("cuevas5.jpg");
+  min-height: 500px;
+  opacity: 0.8;
+}
+
+.bgimg-3 {
+  background-image: url("cuevas4.jpg");
+  min-height: 500px;
+  opacity: 0.8;
+}
+	
+.bgimg-4 {
+  background-image: url("cuevas6.jpg");
+  min-height: 500px;
+  opacity: 0.8;
+}	
+	
+.bgimg-5 {
+  background-image: url("cuevas7.jpg");
+  min-height: 500px;
+  opacity: 0.8;
+}	
+	
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+hr.design{
+  border: 4px solid black;
+  width:140px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+		
+/*Discover our Menu*/	
+.image-group{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1.5rem;
+}	
+	
+.discover-our-products .bakeshop-description{
+	padding-top: 3rem;
+	margin-bottom: 0;
+}	
+
+	
+/*column*/	
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+	
+.testimonials{
+  padding: 40px 0;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: #191919;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: #F0E0C4;
+  padding: 30px;
+}
+.testimonial img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color: #EEA210;
+  margin-bottom: 20px;
+}
+
+.checked {
+  color: #191919;
+}	
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}		
+
+/* footer */
+
+footer{
+	position: fixed;
+	bottom: 0;
+	border-top: 15px solid #EEA210;
+}
+	
+.back-to-top{
+	width: 7rem;
+	height: 7rem;
+	background-color:#932C0D;
+	position: absolute;
+	top: -3rem;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+}	
+	
+.back-to-top i{
+	display: block;
+	color: #EEA210;
+	font-size: 2rem;
+	padding: 2rem;
+	animation: up 2s infinite;
+}		
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: #932C0D;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px 'Cabin', sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 35%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Alex Brush', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #EEA210;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #EEA210;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 40%;
+}
+
+.footer-distributed .footer-company-contact{
+	line-height: 20px;
+	color:  #FFFFFF;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+	text-align: justify;
+}	
+
+.footer-distributed .footer-company- span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+	
+.footer-distributed .footer-center i{
+	background-color: #41190B;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #FFFFFF;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #FFFFFF;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+	text-align: justify;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #41190B;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+	
+.footer-distributed .lower-footer{
+	background-color: #33140A;	
+	width: 100%;
+	position: absolute;
+	padding-top: 20px;
+	left: 0px;
+}
+
+.footer-distributed .copyright{
+	color: #FFFFFF;
+	text-align: center;
+	padding: 10px;
+}
+
+.footer-distributed .bgmusic{
+	text-align: center;
+}
+
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right,
+	.footer-distributed .lower-footer{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}	
+
+/* media queries */
+@media screen and (min-width: 900px){
+	section{
+		padding: 7.9rem;
+	}
+	
+	.menu-toggle{
+		display: none;
+	}
+	
+	.nav{
+		justify-content: space-between;
+	}
+	
+	.nav-list{
+		position: initial;	
+		width: initial;
+		height: initial;
+		background-color: transparent;
+		padding:0;
+		justify-content: initial;
+		flex-direction: row;
+		transform: initial;
+		transition: initial;
+	}
+	
+	.nav-item{
+		margin-left: 0 2.4rem;
+		border: none;
+	}
+	
+	.nav-item: last-child{
+		margin-right: 0px;
+	}
+	
+	.nav-link{
+		font-size: 1.3rem;
+	}
+	
+	.active{
+		position: relative;
+	}
+	
+	.active::before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #FFFFFF;
+		left: 0;
+		bottom: -3px;
+	}
+	
+	.sub-headline{
+		font-size: 10rem;
+	}
+	
+	.first-letter{
+		font-size: 12.2rem;
+	}
+	
+	.headline{
+		font-size: 4.7rem;
+		letter-spacing: .8rem;
+	}
+	
+	.line{
+		max-width: 11.4rem;
+	}
+	
+	.bakeshop-info{
+		display: flex;
+		align-items: center;
+	}
+	
+	.bakeshop-info > div{
+		flex: 1;
+	}
+	
+	.padding-right{
+		padding-right: 7rem;
+	}
+	
+	.footer-content{
+		max-width: 77.5rem;
+		margin: auto;
+	}
+	
+	.footer-content-about{
+		max-width: 51.3rem;
+		margin: 0 auto 5.4rem;
+	}
+	
+	.footer-content-divider{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+
+	.social-media{
+		width: 100%;
+		max-width: 27.3rem;
+		margin: 1 1rem;
+		
+	}
+	
+	.social-icons i{
+		opacity: 1;
+	}
+}	
+	
+/* animations */
+	@keyframes fadeUp {
+		0%{
+			transform: translateY(4rem);
+		}
+		100%{
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	
+	@keyframes scale {
+		0%{
+			transform: scale(2);
+		}
+		100%{
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+	
+	@keyframes grow {
+		0%{
+			width: 0;
+		}
+		100%{
+			opacity: 1;
+			width: 100%;
+		}
+	}
+	
+	@keyframes spin {
+		0%{
+			transform: rotate(0);
+		}
+		100%{
+			opacity: 1;
+			transform: rotate(-360deg);
+		}
+	}
+	
+	@keyframes fadeDown {
+		0%{
+			transform: translateY(-1rem);
+		}
+		100%{
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+ 
+	@keyframes up {
+		0%{
+			opacity: 0;
+		}
+		
+		50%{
+			opacity: 1;
+			
+		}
+		
+		100%{
+			opacity: 0;
+			transform: translateY(-1rem);
+		}
+	}
+
+
+	
+	
+	
+	
+
+</style>
+<body>
+	
+<header>	
+<div class="container">
+	<nav class="nav">
+		<div class="menu-toggle">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+			<i class="fa fa-times" aria-hidden="true"></i>
+		</div>
+		<a href="home.html" class="logo"><img src="Logo cuevas.png" width="333" height="197" alt="Cuevas Logo"></a>
+		<ul class="nav-list">
+		<li class="nav-item">
+			<a href="home.html"> 
+				<div class="icon">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<i class="fa fa-home" aria-hidden="true"></i>
+				</div>
+				<div class="nav-link active"><span data-text="Home">Home</span></div>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="about.html"> 
+				<div class="icon">
+					<i class="fa fa-file-text-o" aria-hidden="true"></i>
+					<i class="fa fa-file-text-o" aria-hidden="true"></i>
+				</div>
+				<div class="nav-link"><span data-text="About">About</span></div>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="milestones.html"> 
+				<div class="icon">
+					<i class="fa fa-flag-o" aria-hidden="true"></i>
+					<i class="fa fa-flag-o" aria-hidden="true"></i>
+				</div>
+				<div class="nav-link"><span data-text="Milestones">Milestones</span></div>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="products.html"> 
+				<div class="icon">
+					<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+					<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+				</div>
+				<div class="nav-link"><span data-text="Products">Products</span></div>
+			</a>
+		</li>		 
+		<li class="nav-item">
+			<a href="gallery.html"> 
+				<div class="icon">
+					<i class="fa fa-picture-o" aria-hidden="true"></i>
+					<i class="fa fa-picture-o" aria-hidden="true"></i>
+				</div>
+				<div class="nav-link"><span data-text="Gallery">Gallery</span></div>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="branches.html"> 
+				<div class="icon">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+				</div>
+				<div class="nav-link"><span data-text="Branches">Branches</span></div>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="testimonials.html"> 
+				<div class="icon">
+					<i class="fa fa-users" aria-hidden="true"></i>
+					<i class="fa fa-users" aria-hidden="true"></i>
+				</div>
+				<div class="nav-link"><span data-text="Testimonials">Testimonials</span></div>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="contact.html"> 
+				<div class="icon">
+					<i class="fa fa-address-book-o" aria-hidden="true"></i>
+					<i class="fa fa-address-book-o" aria-hidden="true"></i>
+				</div>
+				<div class="nav-link"><span data-text="Contact">Contact</span></div>
+			</a>
+		</li>
+		</ul>
+	</nav>
+</div>
+</header>
+<!-- header ends -->
+
+<section class="hero" id="hero">
+	<div class="container">
+		<h2 class="sub-headline">
+			<span class="first-letter">T</span>estimonials
+		</h2>
+		<h1 class="headline">Cuevas Bakeshop</h1>
+		<div class="headline-description">
+			<div class="separator">
+				<div class="line line-left"></div>
+				<div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
+				<div class="line line-right"></div>
+			</div>
+			<div class="single-animation">
+				<h5>To God Be The Glory</h5>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- hero ends -->	
+	
+
+	
+<div class="testimonials">
+      <div class="inner">
+
+        <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi1.jpg" alt="testimonial_angela">
+              <div class="name">Irish Dela Cruz</div>
+              <div class="stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p>
+                “I just wanted to thank you for my daughter’s  amazing 10th birthday custom cookies! As you know, I’ve been ordering from you for years, but have never had custom cookies for us! I was so pleasantly surprised when Cuevas Bakery  brought my custom cookie favors to her birthday party. They are so HER 🙂 You did an absolutely fantastic job with them. Thank you so very much. I am a lifetime customer!”    
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi2.jpg" alt="testimonial_Mark">
+              <div class="name">Mark Daniel Bautista</div>
+              <div class="stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star checked" aria-hidden="true"></i>
+              </div>
+
+              <p>
+               "I have not ordered cookies (yet!) but received one today as a thank you for a baby gift.   It is the most beautifully decorated cookie I’ve ever seen. Ever. So professonally done. The best part was the taste was beyond perfection. I have bookmarked this site and will definitely order cookies for my next special occasion."
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi3.jpg" alt="testimonial-danette">
+              <div class="name">Mike Philip D. Rivera</div>
+              <div class="stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p>
+                "I had Cuevas Bakery  create my beautiful cupcake giveaways and I must say I was completely satisfied! Not only was it beautiful but it was also delicious! Thank you so much Cuevas Bakery for making my wedding that much sweeter!”
+              </p>
+            </div>
+          </div>
+        </div>
+		<div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi4.png" alt="testimonial-james">
+              <div class="name">James Arvin Robles</div>
+              <div class="stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star checked" aria-hidden="true"></i>
+				<i class="fa fa-star checked" aria-hidden="true"></i>
+              </div>
+
+              <p>
+               "I went to Cuevas Bakery  in hopes to buy the perfect ensaymadas  for my boss who turned 40 this past weekend. The ensaymadas  was a hit and my boss LOVED it!  Ensaymadas are her favorites and filled them with ube and cheese jams.     It was a blockbuster.   I can’t wait to order more ensaymadas from your bakery again.  Thank you so much!!! "   
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi5.jpg" alt="testimonial-marie">
+              <div class="name">Marie Joy C. Buena</div>
+              <div class="stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star checked" aria-hidden="true"></i>
+              </div>
+
+              <p>
+              "The cookies on a stick were amazing and fun. It was such a fun display and take home party favor.  I’m pretty much sold on Cuevas’  cookies and think they need to be a part of every special occasion from here forward.  A big thank you is sent your way!!  "
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi6.jpg" alt="testimonial-bryan">
+              <div class="name">Bryan Peter H. Santos</div>
+              <div class="stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p>
+               "Your beautiful cookies were a big hit, especially with my 3 year old. He will do anything we ask of him, as long as he can have a cookie! Thank you again for making cookies. We have enjoyed our family time and your cookies made it all the more special." 
+              </p>
+            </div>
+          </div>
+        </div>  
+		  <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi7.jpg" alt="testimonial-nicole">
+              <div class="name">Nicole Leigh G. Valdez</div>
+              <div class="stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star checked" aria-hidden="true"></i>
+              </div>
+
+              <p>
+               "Thanks for making the best centerpiece for my little guy’s birthday party! His birthday  got rave reviews!!!"
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi8.jpg" alt="testimonial-carlo">
+              <div class="name">Carlo Luis F. Roque</div>
+              <div class="stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p>
+              "Cuevas Bakery’s snack cakes designs are phenomenal! For my birthday, I wanted to do something other than the traditional birthday cake.   I shared some of my thoughts with Cuevas Bakery and left the rest in their capable hands. The snack cakes  they designed for me were PERFECT and absolutely delicious.  It was obvious to us that Cuevas Bakery  took great care in designing the perfect sweet treat for my special day.   "
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi9.jpg" alt="testimonial-marga">
+              <div class="name">Margarita C. David</div>
+              <div class="stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p>
+              "When I want to make a birthday  splash, I use Cuevas  Bakery. They  designed these fabulous snack cakes for my visitors.     Everyone raves over these delicious works of art. Want to make a lasting impression? Have Cuevas Bakery bake for your event.”"
+              </p>
+            </div>
+          </div>
+        </div>  
+		  <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi10.jpg" alt="testimonial-angeli">
+              <div class="name">Angeli S. Nocum</div>
+              <div class="stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p>
+               “Cuevas Bakery has an incredible talent for detail and perfection. Each cookie is perfect and tastes just as good as the artwork they create. They are too pretty to eat, but you can’t help yourself because they taste divine! We threw a 70th birthday party for my parents. My mother saved one to keep “forever” in the freezer.  People went nuts over the cookies and it was better than having a cake! You just cannot go wrong with Cuevas Bakery cookies! My parents loved them so much they ordered some for Christmas and to give as gifts to their friends. Delightful and Delicious!!" 
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi11.jpg" alt="testimonial-jose">
+              <div class="name">Jose R. Enriquez</div>
+              <div class="stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star checked" aria-hidden="true"></i>
+				<i class="fa fa-star checked" aria-hidden="true"></i>
+              </div>
+
+              <p>
+             "Ordered last minute for a customized cake and I was very delighted that Cuevas was fast to respond. They are very kind and easy to talk to. Felt really satisfied when I saw the cake. It met my expectations visually and taste-wise. Definitely worth the money I paid for. I'm a happy customer. 😊❤️“ 
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="testi12.jpg" alt="testimonial-aileen">
+              <div class="name">Aileen C. Yabut</div>
+              <div class="stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p>
+              "Their cakes are luscious, you know they used the best ingredients. And always met the designs I asked for or even better.
+Thank you Cuevas Bakeshop, will definitely order again. More power!"
+              </p>
+            </div>
+          </div>
+        </div>  
+		  
+      </div>
+    </div>
+
+
+	
+	
+
+	
+
+
+	
+	
+
+<footer class="footer-distributed">
+			<div class="footer-left">
+          <img src="Logo cuevas.png" alt="logo">
+				<h3>Cuevas<span> Bakeshop</span></h3>
+ 
+				<p class="footer-links">
+					<a href="home.html">Home</a>
+					|
+					<a href="about.html">About</a>
+					|
+					<a href="milestones.html">Milestones</a>
+					|
+					<a href="products.html">Products</a>
+					|
+					<a href="gallery.html">Gallery</a>
+					|
+					<a href="branches.html">Branches</a>
+					|
+					<a href="testimonials.html">Testimonials</a>
+					|
+					<a href="contact.html">Contact</a>
+				</p>
+ 
+				
+			</div>
+ 
+			<div class="footer-center">
+				<p class="footer-company-contact">
+					<span>Contact Cuevas Bakeshop</span></p>
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>#3 Don Pablo Subdivision, Malinta, Valenzuela City </span>
+						</p>
+				</div>
+ 
+				<div>
+					<i class="fa fa-phone"></i>
+					<p> Globe - 0927 268-4000</p>
+					<p> Smart - 0907 552-8438</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:customerservice@cuevasbakeshop.com.ph">customerservice@cuevasbakeshop.com.ph</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About Cuevas Bakeshop</span>
+					Cuevas Bakeshop is a family-owned business that caters bread, pastries and cakes to Filipino masses.   Cuevas Bakeshop takes pride in the quality and affordability of their breads, pastries and cakes that can give full satisfaction to every Filipino.</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/Cuevas-Bakeshop-202030989881324/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/CuevasBakery"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/cuevas.bakeshop/?fbclid=IwAR2pLaMZOmeFhCc5DOkDO0CztztMcLv8iSTWLjk9SCvhl-GClorNZFWHzA0"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCga0LTSqA6xQ_-L7eztTrCQ/featured?fbclid=IwAR3pDr44tl45AlCHrJV3lGPRXz6HSNzaCmFQdDb4aX-03PJkVRzTPsLvkCQ"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+	
+	<div class="lower-footer">
+		<div class="copyright">
+			© Copyright 2020 Cuevas Bakeshop. All rights reserved.<br>
+		Developed by: Leria, Gian Andrei | Manalo, Bryan Justine | Morelos, Ian Lemuel
+		</div>
+		<div class="bgmusic">
+			<audio controls loop>
+				<source src="SugarMorning.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+	</div>
+	
+	
+		</footer>	
+	
+	
+	
+	
+<script>
+	
+	const selectElement = function (element){
+	return document.querySelector(element);
+	};
+	
+	
+	let menuToggler = selectElement('.menu-toggle');
+	let body = selectElement('body');
+	
+	menuToggler.addEventListener('click', function () {
+		body.classList.toggle('open');	
+	});
+	
+	//scroll reveal
+	
+	window.sr = ScrollReveal();
+	
+	
+	sr.reveal('.animate-left', {
+		origin: 'left',
+		duration: 1000,
+		distance: '25rem',
+		delay: 300
+		
+	});
+	
+	sr.reveal('.animate-right', {
+		origin: 'right',
+		duration: 1000,
+		distance: '25rem',
+		delay: 600
+		
+	});
+	
+	sr.reveal('.animate-top', {
+		origin: 'top',
+		duration: 1000,
+		distance: '25rem',
+		delay: 600
+		
+	});
+	
+	sr.reveal('.animate-bottom', {
+		origin: 'bottom',
+		duration: 1000,
+		distance: '25rem',
+		delay: 600
+		
+	});
+	
+	
+</script>	
+	
+</body>
+</html>
